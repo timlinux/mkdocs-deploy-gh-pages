@@ -53,7 +53,7 @@ fi
 if ! git config --get user.email; then
     git config --global user.email "${GITHUB_ACTOR}@users.noreply.${GITHUB_DOMAIN:-"github.com"}"
 fi
-
+pip freeze
 git remote rm origin
 git remote add origin "${remote_repo}"
 
